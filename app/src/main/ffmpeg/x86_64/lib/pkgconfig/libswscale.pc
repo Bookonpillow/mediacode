@@ -1,0 +1,14 @@
+prefix=/Users/jiayayao/work/some/FFmpeg/android/x86-64
+exec_prefix=${prefix}
+libdir=/Users/jiayayao/work/some/FFmpeg/android/x86-64/lib
+includedir=/Users/jiayayao/work/some/FFmpeg/android/x86-64/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.5.100
+Requires: 
+Requires.private: libavutil >= 56.31.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}
